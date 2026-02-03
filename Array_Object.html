@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>object in Array</title>
+</head>
+<body>
+    <script>
+        var employee = [{name : 'Yogesh', age : 22 ,address : 'Pune'},
+                        {name : 'mahesh', age : 22 ,address : 'mumbai'},
+                        {name : 'sahil', age : 22 ,address : 'solapur'},
+                        {name : 'yuvraj', age : 22 ,address : 'hyd'},
+                        {name : 'ramesh', age : 22 ,address : 'solapur'},
+                        {name : 'sakeeb', age : 22 ,address : 'kolkata'},
+                        {name : 'vignesh', age : 22 ,address : 'Pune'}
+                    ];
+
+                    document.write("<h2>Employee<h2/>");
+                    document.write("<table>");
+                    document.write("<tr>");
+                    document.write("<th>Name</th>");
+                    document.write("<th>age</th>");
+                    document.write("<th>Address</th>");
+                    document.write("</tr>");
+                    
+                    for(let i = 0; i <employee.length; i++){
+                        document.write("<tr>");
+
+                            document.write("<td>" + employee[i].name + "</td>");
+                            document.write("<td>" + employee[i].age + "</td>");
+                            document.write("<td>" + employee[i].address + "</td>");
+
+                        document.write("</tr>");
+                    }
+                    
+                    document.write("</table>");
+    </script>
+</body>
+</html>
